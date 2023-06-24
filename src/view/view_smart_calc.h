@@ -1,0 +1,50 @@
+#ifndef MAINWINDOW_H
+#define MAINWINDOW_H
+
+#include <QKeyEvent>
+#include <QMainWindow>
+#include <QTimer>
+#include <QVector>
+#include <QtMath>
+
+#include "../controller/controller_smart_calc.h"
+#include "view_credit.h"
+#include "view_deposit.h"
+
+QT_BEGIN_NAMESPACE
+namespace Ui {
+class MainWindow;
+}
+QT_END_NAMESPACE
+
+class MainWindow : public QMainWindow {
+  Q_OBJECT
+
+ public:
+  MainWindow(QWidget *parent = nullptr);
+  ~MainWindow();
+
+ private slots:
+  void DigitsNumbers();
+  void AriphNumbers();
+  void TrigonomyNumbers();
+  void on_pushButton_dot_clicked();
+  void on_pushButton_unar_clicked();
+  void on_pushButton_AC_clicked();
+  void on_pushButton_eq_clicked();
+  void on_pushButton_backspace_clicked();
+  void on_pushButton_graph_clicked();
+  void on_pushButton_credit_clicked();
+  void on_pushButton_deposit_clicked();
+
+ private:
+  s21::Controller controller_;
+  double x_begin_, x_end_, h_, X_, xy_1_, xy_2_, result_1_, result_2_;
+  int N_;
+
+  QVector<double> x_, y_;
+
+  Ui::MainWindow *ui;
+};
+
+#endif  // MAINWINDOW_H
