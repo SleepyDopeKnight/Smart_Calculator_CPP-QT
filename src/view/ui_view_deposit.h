@@ -6,8 +6,8 @@
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
 
-#ifndef UI_VIEW_DEPOSIT_H
-#define UI_VIEW_DEPOSIT_H
+#ifndef SMART_CALCULATOR_CPP_VIEW_UI_VIEW_DEPOSIT_H_
+#define SMART_CALCULATOR_CPP_VIEW_UI_VIEW_DEPOSIT_H_
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
@@ -722,4 +722,4 @@ class Deposit : public Ui_Deposit {};
 
 QT_END_NAMESPACE
 
-#endif  // UI_VIEW_DEPOSIT_H
+#endif  // SMART_CALCULATOR_CPP_VIEW_UI_VIEW_DEPOSIT_H_

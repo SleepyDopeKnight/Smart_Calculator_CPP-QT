@@ -1,5 +1,5 @@
-#ifndef VIEW_CREDIT_H
-#define VIEW_CREDIT_H
+#ifndef SMART_CALCULATOR_CPP_VIEW_VIEW_CREDIT_H_
+#define SMART_CALCULATOR_CPP_VIEW_VIEW_CREDIT_H_
 
 #include <QDialog>
 #include <QKeyEvent>
@@ -25,4 +25,4 @@ class Credit : public QDialog {
   Ui::Credit *ui;
 };
 
-#endif  // VIEW_CREDIT_H
+#endif  // SMART_CALCULATOR_CPP_VIEW_VIEW_CREDIT_H_

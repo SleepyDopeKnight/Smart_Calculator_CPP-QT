@@ -6,8 +6,8 @@
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
 
-#ifndef UI_VIEW_CREDIT_H
-#define UI_VIEW_CREDIT_H
+#ifndef SMART_CALCULATOR_CPP_VIEW_UI_VIEW_CREDIT_H_
+#define SMART_CALCULATOR_CPP_VIEW_UI_VIEW_CREDIT_H_ 
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
@@ -382,4 +382,4 @@ class Credit : public Ui_Credit {};
 
 QT_END_NAMESPACE
 
-#endif  // UI_VIEW_CREDIT_H
+#endif  // SMART_CALCULATOR_CPP_VIEW_UI_VIEW_CREDIT_H_

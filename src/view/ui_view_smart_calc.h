@@ -6,8 +6,8 @@
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
 
-#ifndef UI_VIEW_SMART_CALC_H
-#define UI_VIEW_SMART_CALC_H
+#ifndef SMART_CALCULATOR_CPP_VIEW_UI_VIEW_SMART_CALC_H_
+#define SMART_CALCULATOR_CPP_VIEW_UI_VIEW_SMART_CALC_H_
 
 #include <qcustomplot.h>
 
@@ -984,4 +984,4 @@ class MainWindow : public Ui_MainWindow {};
 
 QT_END_NAMESPACE
 
-#endif  // UI_VIEW_SMART_CALC_H
+#endif  // SMART_CALCULATOR_CPP_VIEW_UI_VIEW_SMART_CALC_H_

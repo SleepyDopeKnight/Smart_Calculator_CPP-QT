@@ -1,5 +1,5 @@
-#ifndef DEPOSIT_H
-#define DEPOSIT_H
+#ifndef SMART_CALCULATOR_CPP_VIEW_VIEW_DEPOSIT_H_
+#define SMART_CALCULATOR_CPP_VIEW_VIEW_DEPOSIT_H_
 
 #include <QDialog>
 #include <QKeyEvent>
@@ -27,4 +27,4 @@ class Deposit : public QDialog {
   Ui::Deposit *ui;
 };
 
-#endif  // DEPOSIT_H
+#endif  // SMART_CALCULATOR_CPP_VIEW_VIEW_DEPOSIT_H_

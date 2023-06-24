@@ -1,5 +1,5 @@
-#ifndef MAINWINDOW_H
-#define MAINWINDOW_H
+#ifndef SMART_CALCULATOR_CPP_VIEW_VIEW_SMART_CALC_H_
+#define SMART_CALCULATOR_CPP_VIEW_VIEW_SMART_CALC_H_
 
 #include <QKeyEvent>
 #include <QMainWindow>
@@ -47,4 +47,4 @@ class MainWindow : public QMainWindow {
   Ui::MainWindow *ui;
 };
 
-#endif  // MAINWINDOW_H
+#endif  // SMART_CALCULATOR_CPP_VIEW_VIEW_SMART_CALC_H_
