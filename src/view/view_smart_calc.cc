@@ -29,8 +29,7 @@ MainWindow::MainWindow(QWidget *parent)
           SLOT(TrigonomyNumbers()));
   connect(ui->pushButton_tan, SIGNAL(clicked()), this,
           SLOT(TrigonomyNumbers()));
-  connect(ui->pushButton_ln, SIGNAL(clicked()), this,
-          SLOT(TrigonomyNumbers()));
+  connect(ui->pushButton_ln, SIGNAL(clicked()), this, SLOT(TrigonomyNumbers()));
   connect(ui->pushButton_log, SIGNAL(clicked()), this,
           SLOT(TrigonomyNumbers()));
   connect(ui->pushButton_mod, SIGNAL(clicked()), this, SLOT(AriphNumbers()));

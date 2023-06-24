@@ -75,7 +75,9 @@ bool s21::Model::CheckFunctionPlacement(char *string) {
   char previous_char = '\0';
   char preprevious_char = '\0';
   while (*string != '\0') {
-    if (*string == 'c' || *string == 's' || *string == 'l' || *string == 't') {
+    if ((*string == 'c' || *string == 's' || *string == 'l' ||
+         *string == 't') &&
+        previous_char != '\0' && preprevious_char != '\0') {
       --string;
       if (*string == 'a') --string;
       if (*string == 'o') string -= 2;
@@ -83,8 +85,7 @@ bool s21::Model::CheckFunctionPlacement(char *string) {
       if (*string == 'r') string -= 3;
       if ((*string == '+' || *string == '-' || *string == '*' ||
            *string == '/' || *string == '(' || *string == ')' ||
-           *string == '^' || previous_char == '\0' ||
-           preprevious_char == '\0')) {
+           *string == '^')) {
         ++string;
         if (*string == 'a') string += 4;
         if (*string == 'c') string += 3;

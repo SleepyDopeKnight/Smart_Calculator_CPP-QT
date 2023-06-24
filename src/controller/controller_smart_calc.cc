@@ -5,7 +5,7 @@ bool s21::Controller::CheckErrors(char *string) {
 }
 
 double s21::Controller::GetResult(char *string, double x) {
-  return model.Terminal(string, x);;
+  return model.Terminal(string, x);
 }
 
 bool s21::Controller::GetCredit(s21::Finance::credit *calc) {

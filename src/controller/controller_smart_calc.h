@@ -16,6 +16,7 @@ class Controller {
   bool GetDeposit(s21::Finance::deposit *calc);
   bool GetCredit(s21::Finance::credit *calc);
   bool GetTransactions(s21::Finance::deposit *calc, char *string);
+
  private:
   Model model;
   Finance valute_calc;

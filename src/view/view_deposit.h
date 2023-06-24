@@ -14,7 +14,6 @@ class Deposit : public QDialog {
   Q_OBJECT
 
  public:
-
   explicit Deposit(QWidget *parent = nullptr);
   ~Deposit();
 
