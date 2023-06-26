@@ -12,6 +12,7 @@ SOURCES += \
     ../controller/controller_smart_calc.cc \
     ../model/model_smart_calc.cc \
     ../model/model_finance_calc.cc \
+    ../model/model_validation_calc.cc \
     view_credit.cc \
     view_smart_calc.cc \
     view_deposit.cc \
@@ -22,6 +23,7 @@ HEADERS += \
     ../controller/controller_smart_calc.h \
     ../model/model_smart_calc.h \
     ../model/model_finance_calc.h \
+    ../model/model_validation_calc.h \
     view_credit.h \
     view_smart_calc.h \
     view_deposit.h \

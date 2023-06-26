@@ -35,20 +35,8 @@ class Model {
     // log - 19;
   };
 
-  // Constructors
-  Model() = default;
-  ~Model() = default;
-
-  // Validation
-  bool ValidInput(char *string);
-  bool ValidFunction(char *string);
-  bool CheckFunctionPlacement(char *string);
-  bool CheckBracketPlacement(char *string);
-  bool CheckOperatorsPlacement(char *string);
-  bool ValidationString(char *string);
-  std::stack<s21::Model::lexeme> PusherInStack(char *string, double x);
-
   // ReversePolishNotation & Calculate
+  std::stack<s21::Model::lexeme> PusherInStack(char *string, double x);
   std::stack<s21::Model::lexeme> ReversePolishNotation(
       std::stack<lexeme> ready);
   double Calculate(std::stack<lexeme> sorted);

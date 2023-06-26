@@ -3,12 +3,13 @@
 
 #include "../model/model_finance_calc.h"
 #include "../model/model_smart_calc.h"
+#include "../model/model_validation_calc.h"
 
 namespace s21 {
 class Controller {
  public:
-  Controller() = default;
-  ~Controller() = default;
+  Controller();
+  ~Controller();
 
   bool CheckErrors(char *string);
   double GetResult(char *string, double x);
@@ -18,8 +19,9 @@ class Controller {
   bool GetTransactions(s21::Finance::deposit *calc, char *string);
 
  private:
-  Model model;
-  Finance valute_calc;
+  Validation *validation_;
+  Model *model_;
+  Finance *valute_calc_;
 };
 }  // namespace s21
 
