@@ -62,7 +62,7 @@ void s21::Finance::DepositNoCapital(deposit *calc) {
     calc->pay_procent +=
         RoundRub((((calc->sum_deposit * bet * calc->time_deposit) / 365) /
                   calc->time_deposit));
-    count++;
+    ++count;
   }
   calc->pay_procent = RoundRub(calc->pay_procent);
   calc->sum_nalog = RoundRub(calc->pay_procent * (calc->nalog / 100));
@@ -89,7 +89,7 @@ void s21::Finance::DepositDailyCapital(deposit *calc) {
     calc->sum_deposit +=
         RoundRub(((calc->sum_deposit * bet * calc->time_deposit) / 365) /
                  calc->time_deposit);
-    count++;
+    ++count;
   }
   calc->pay_procent = RoundRub(calc->pay_procent);
   calc->sum_nalog = RoundRub(calc->pay_procent * (calc->nalog / 100));
@@ -180,8 +180,8 @@ int s21::Finance::Transactions(deposit *calc, char *string) {
     if (strchr("0123456789", *string)) {
       char *dest = string;
       while (strchr("0123456789", *string)) {
-        string++;
-        lenght++;
+        ++string;
+        ++lenght;
       }
       strncpy(num, dest, lenght);
       if (type_trans == 1) {
@@ -191,7 +191,7 @@ int s21::Finance::Transactions(deposit *calc, char *string) {
         } else {
           check = 0;
           sscanf(num, "%d", &calc->day_pay[i][1]);
-          i++;
+          ++i;
         }
       } else {
         if (check == 0) {
@@ -200,11 +200,11 @@ int s21::Finance::Transactions(deposit *calc, char *string) {
         } else {
           check = 0;
           sscanf(num, "%d", &calc->day_deposit[j][1]);
-          j++;
+          ++j;
         }
       }
     }
-    string++;
+    ++string;
   }
   return 0;
 }
