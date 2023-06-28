@@ -8,8 +8,7 @@ ifeq ($(OS), Linux)
 	TEST_FLAGS += -lpthread
 endif
 
-# all: tests gcov_report check install dvi
-all: tests gcov_report 
+all: tests gcov_report check install dvi
 
 tests: tests.cc
 	$(CXX) $(CXXFLAGS) tests.cc ./model/model_smart_calc.cc $(TEST_FLAGS)
