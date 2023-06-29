@@ -10,13 +10,16 @@ Deposit::Deposit(QWidget *parent) : QDialog(parent), ui(new Ui::Deposit) {
   auto numeric_valid = new QDoubleValidator(-1000000000, 1000000000, 6, this);
   numeric_valid->setNotation(QDoubleValidator::StandardNotation);
 
- ui->ui_sum_deposit->setValidator(numeric_valid);
- ui->ui_time_deposit->setValidator(new QIntValidator(-1000000000, 1000000000, this));
- ui->ui_procent->setValidator(numeric_valid);
- ui->ui_nalog->setValidator(numeric_valid);
- ui->ui_sum_day_deposit->setValidator(numeric_valid);
- ui->ui_day_deposit->setValidator(new QIntValidator(-1000000000, 1000000000, this));
- ui->ui_day_pay->setValidator(new QIntValidator(-1000000000, 1000000000, this));
+  ui->ui_sum_deposit->setValidator(numeric_valid);
+  ui->ui_time_deposit->setValidator(
+      new QIntValidator(-1000000000, 1000000000, this));
+  ui->ui_procent->setValidator(numeric_valid);
+  ui->ui_nalog->setValidator(numeric_valid);
+  ui->ui_sum_day_deposit->setValidator(numeric_valid);
+  ui->ui_day_deposit->setValidator(
+      new QIntValidator(-1000000000, 1000000000, this));
+  ui->ui_day_pay->setValidator(
+      new QIntValidator(-1000000000, 1000000000, this));
 }
 
 Deposit::~Deposit() { delete ui; }

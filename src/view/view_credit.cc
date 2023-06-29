@@ -11,7 +11,8 @@ Credit::Credit(QWidget *parent) : QDialog(parent), ui(new Ui::Credit) {
   numeric_valid->setNotation(QDoubleValidator::StandardNotation);
 
   ui->ui_sum_credit->setValidator(numeric_valid);
-  ui->ui_time_credit->setValidator(new QIntValidator(-1000000000, 1000000000, this));
+  ui->ui_time_credit->setValidator(
+      new QIntValidator(-1000000000, 1000000000, this));
   ui->ui_procent->setValidator(numeric_valid);
 }
 

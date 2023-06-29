@@ -2,9 +2,9 @@
 #define SMART_CALCULATOR_CPP_VIEW_VIEW_DEPOSIT_H_
 
 #include <QDialog>
-#include <QKeyEvent>
 #include <QDoubleValidator>
 #include <QIntValidator>
+#include <QKeyEvent>
 
 #include "../controller/controller_smart_calc.h"
 

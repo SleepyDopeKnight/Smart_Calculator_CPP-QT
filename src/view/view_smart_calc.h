@@ -1,12 +1,12 @@
 #ifndef SMART_CALCULATOR_CPP_VIEW_VIEW_SMART_CALC_H_
 #define SMART_CALCULATOR_CPP_VIEW_VIEW_SMART_CALC_H_
 
+#include <QDoubleValidator>
 #include <QKeyEvent>
 #include <QMainWindow>
 #include <QTimer>
 #include <QVector>
 #include <QtMath>
-#include <QDoubleValidator>
 
 #include "../controller/controller_smart_calc.h"
 #include "view_credit.h"
