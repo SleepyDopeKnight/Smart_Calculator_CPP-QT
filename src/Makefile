@@ -55,7 +55,7 @@ endif
 clean:
 	rm -rf *.out *.gcda *.gcno *.a *.info *.o report *.dSYM .DS_Store *.dvi
 	rm -rf ./model/*.out ./model/*.gcda ./model/*.gcno ./model/*.a ./model/*.info ./model/*.o report ./model/*.dSYM ./model/.DS_Store
-	rm -rf ./view/*.out ./view/*.gcda ./view/*.gcno ./view/*.a ./view/*.info ./view/*.o report ./view/*.dSYM ./view/.q* ./view/.DS_Store ./view/moc*
+	rm -rf ./view/*.out ./view/*.gcda ./view/*.gcno ./view/*.a ./view/*.info ./view/*.o report ./view/*.dSYM ./view/.q* ./view/.DS_Store ./view/moc* ./view/*.user
 	rm -rf ./controller/*.out ./controller/*.gcda ./controller/*.gcno ./controller/*.a ./controller/*.info ./controller/*.o report ./controller/*.dSYM ./controller/.DS_Store
 
 check:

@@ -3,6 +3,8 @@
 
 #include <QDialog>
 #include <QKeyEvent>
+#include <QDoubleValidator>
+#include <QIntValidator>
 
 #include "../controller/controller_smart_calc.h"
 

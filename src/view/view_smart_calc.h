@@ -6,6 +6,7 @@
 #include <QTimer>
 #include <QVector>
 #include <QtMath>
+#include <QDoubleValidator>
 
 #include "../controller/controller_smart_calc.h"
 #include "view_credit.h"

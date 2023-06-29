@@ -45,6 +45,17 @@ MainWindow::MainWindow(QWidget *parent)
   connect(ui->pushButton_rbracket, SIGNAL(clicked()), this,
           SLOT(DigitsNumbers()));
   connect(ui->pushButton_x, SIGNAL(clicked()), this, SLOT(DigitsNumbers()));
+
+  auto numeric_valid = new QDoubleValidator(-1000000000, 1000000000, 6, this);
+  auto interval_valid = new QDoubleValidator(-1000000, 1000000, 6, this);
+  numeric_valid->setNotation(QDoubleValidator::StandardNotation);
+  interval_valid->setNotation(QDoubleValidator::StandardNotation);
+
+  ui->value_x->setValidator(numeric_valid);
+  ui->x1->setValidator(interval_valid);
+  ui->x2->setValidator(interval_valid);
+  ui->y1->setValidator(interval_valid);
+  ui->y2->setValidator(interval_valid);
 }
 
 MainWindow::~MainWindow() { delete ui; }
