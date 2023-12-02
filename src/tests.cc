@@ -1,6 +1,6 @@
 #include <gtest/gtest.h>
 
-#include "./model/model_smart_calc.h"
+#include "./model/smart_calc/model_smart_calc.h"
 
 s21::Model model;
 

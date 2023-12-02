@@ -10,49 +10,29 @@ CONFIG += c++17
 
 SOURCES += \
     ../controller/controller_smart_calc.cc \
-    ../model/model_smart_calc.cc \
-    ../model/model_finance_calc.cc \
-    ../model/model_validation_calc.cc \
-    view_credit.cc \
-    view_smart_calc.cc \
-    view_deposit.cc \
-    main.cc \
+    ../model/smart_calc/model_smart_calc.cc \
+    ../model/finance_calc/model_finance_calc.cc \
+    ../model/validation/model_validation_calc.cc \
+    ./credit_calc_view/view_credit.cc \
+    ./smart_calc_view/view_smart_calc.cc \
+    ./deposit_calc_view/view_deposit.cc \
+    ../main.cc \
     qcustomplot.cc
 
 HEADERS += \
     ../controller/controller_smart_calc.h \
-    ../model/model_smart_calc.h \
-    ../model/model_finance_calc.h \
-    ../model/model_validation_calc.h \
-    view_credit.h \
-    view_smart_calc.h \
-    view_deposit.h \
+    ../model/smart_calc/model_smart_calc.h \
+    ../model/finance_calc/model_finance_calc.h \
+    ../model/validation/model_validation_calc.h \
+    ./credit_calc_view/view_credit.h \
+    ./smart_calc_view/view_smart_calc.h \
+    ./deposit_calc_view/view_deposit.h \
     qcustomplot.h
 
 FORMS += \
-    view_credit.ui \
-    view_credit.ui \
-    view_deposit.ui \
-    view_smart_calc.ui \
-    view_deposit.ui
-
-ICON = $${PWD}/calc.icns
-
-TARGET = Smart_Calculator
-
-# Default rules for deployment.
-qnx: target.path = /tmp/$${TARGET}/bin
-else: unix:!android: target.path = /opt/$${TARGET}/bin
-!isEmpty(target.path): INSTALLS += target
-
-DISTFILES +=
-
-
-FORMS += \
-    view_credit.ui \
-    view_deposit.ui \
-    view_smart_calc.ui \
-    view_deposit.ui
+    ./credit_calc_view/view_credit.ui \
+    ./deposit_calc_view/view_deposit.ui \
+    ./smart_calc_view/view_smart_calc.ui \
 
 ICON = $${PWD}/calc.icns
 

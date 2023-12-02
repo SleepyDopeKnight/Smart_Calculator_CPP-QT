@@ -1,6 +1,6 @@
 #include <QApplication>
 
-#include "view_smart_calc.h"
+#include "./view/smart_calc_view/view_smart_calc.h"
 
 int main(int argc, char *argv[]) {
   QApplication a(argc, argv);

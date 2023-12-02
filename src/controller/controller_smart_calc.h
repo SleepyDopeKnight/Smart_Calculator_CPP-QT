@@ -1,9 +1,9 @@
 #ifndef SMART_CALCULATOR_CPP_CONTROLLER_CONTROLLER_SMART_CALC_H_
 #define SMART_CALCULATOR_CPP_CONTROLLER_CONTROLLER_SMART_CALC_H_
 
-#include "../model/model_finance_calc.h"
-#include "../model/model_smart_calc.h"
-#include "../model/model_validation_calc.h"
+#include "../model/finance_calc/model_finance_calc.h"
+#include "../model/smart_calc/model_smart_calc.h"
+#include "../model/validation/model_validation_calc.h"
 
 namespace s21 {
 class Controller {

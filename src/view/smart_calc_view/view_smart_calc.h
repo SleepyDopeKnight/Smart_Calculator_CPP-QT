@@ -9,8 +9,8 @@
 #include <QtMath>
 
 #include "../controller/controller_smart_calc.h"
-#include "view_credit.h"
-#include "view_deposit.h"
+#include "../credit_calc_view/view_credit.h"
+#include "../deposit_calc_view/view_deposit.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
