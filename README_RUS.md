@@ -1,6 +1,7 @@
 # Smart_Calculator v2.0
 
 Реализация Smart_Calculator v2.0.
+![](misc/images/smart_calc.png)
 
 ## Contents
 

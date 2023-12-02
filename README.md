@@ -1,6 +1,7 @@
 # Smart_Calculator v2.0
 
 Implementation of Smart_Calculator v2.0.
+![](misc/images/smart_calc.png)
 
 The russian version of the task can be found in the repository.
 
